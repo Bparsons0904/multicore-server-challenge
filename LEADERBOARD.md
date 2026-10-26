@@ -4,11 +4,11 @@ Every submission on the same box: **8 dedicated vCPU / 16 GB**, Postgres 18 on t
 
 | # | Users | Submission | PR | Front | req/s | p95 ms | p99 ms | CPU: app / Postgres | Note |
 |--:|--:|---|---|---|--:|--:|--:|---|---|
-| 1 | **100,000** | [kotlin-raw-luben93](https://github.com/arjaythedev/multicore-server-challenge/pull/48) | [#48](https://github.com/arjaythedev/multicore-server-challenge/pull/48) @luben93 | direct | 25,992 | 356 | 628 | 19% / 71% | Not merged yet: scored at d511a4f, which ships gradle/wrapper/gradle-wrapper.jar (rule 11). The fix commit b03759a fails install.sh (`gradle --version` runs without JAVA_HOME); re-run on the next fix |
-| 2 | **100,000** | [rust-tokio-Scooter1337](submissions/rust-tokio-Scooter1337) | [#7](https://github.com/arjaythedev/multicore-server-challenge/pull/7) @Scooter1337 | direct | 26,279 | 119 | 185 | 20% / 70% |  |
-| 3 | **95,000** | [csharp-sockets-jh-d](submissions/csharp-sockets-jh-d) | [#22](https://github.com/arjaythedev/multicore-server-challenge/pull/22) @jh-d | direct | 24,696 | 493 | 737 | 21% / 75% |  |
-| 4 | **92,000** | [go-raw-kimmotamio](submissions/go-raw-kimmotamio) | [#37](https://github.com/arjaythedev/multicore-server-challenge/pull/37) @kimmotamio | direct | 23,284 | 452 | 600 | 24% / 70% |  |
-| 5 | **90,000** | [rust-epoll-someoneidoknow](submissions/rust-epoll-someoneidoknow) | [#50](https://github.com/arjaythedev/multicore-server-challenge/pull/50) @someoneidoknow | direct | 23,243 | 345 | 421 | 23% / 64% |  |
+| 1 | **100,000** | [rust-tokio-Scooter1337](submissions/rust-tokio-Scooter1337) | [#7](https://github.com/arjaythedev/multicore-server-challenge/pull/7) @Scooter1337 | direct | 26,279 | 119 | 185 | 20% / 70% |  |
+| 2 | **95,000** | [csharp-sockets-jh-d](submissions/csharp-sockets-jh-d) | [#22](https://github.com/arjaythedev/multicore-server-challenge/pull/22) @jh-d | direct | 24,696 | 493 | 737 | 21% / 75% |  |
+| 3 | **92,000** | [go-raw-kimmotamio](submissions/go-raw-kimmotamio) | [#37](https://github.com/arjaythedev/multicore-server-challenge/pull/37) @kimmotamio | direct | 23,284 | 452 | 600 | 24% / 70% |  |
+| 4 | **90,000** | [rust-epoll-someoneidoknow](submissions/rust-epoll-someoneidoknow) | [#50](https://github.com/arjaythedev/multicore-server-challenge/pull/50) @someoneidoknow | direct | 23,243 | 345 | 421 | 23% / 64% |  |
+| 5 | **88,000** | [kotlin-raw-luben93](submissions/kotlin-raw-luben93) | [#48](https://github.com/arjaythedev/multicore-server-challenge/pull/48) @luben93 | direct | 22,456 | 432 | 506 | 20% / 71% |  |
 | 6 | **84,000** | [c-iouring-tigokraft](submissions/c-iouring-tigokraft) | [#10](https://github.com/arjaythedev/multicore-server-challenge/pull/10) @tigokraft | direct | 21,262 | 339 | 421 | 18% / 80% |  |
 | 7 | **84,000** | [cobol-gnucobol-benmandrew](submissions/cobol-gnucobol-benmandrew) | [#15](https://github.com/arjaythedev/multicore-server-challenge/pull/15) @benmandrew | direct | 21,292 | 361 | 461 | 20% / 75% |  |
 | 8 | **80,000** | [julia-raw-wardjm](submissions/julia-raw-wardjm) | [#43](https://github.com/arjaythedev/multicore-server-challenge/pull/43) @wardjm | direct | 20,519 | 339 | 406 | 22% / 68% |  |
