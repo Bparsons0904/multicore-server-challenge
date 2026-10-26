@@ -7,7 +7,12 @@ serves HTTP itself (no nginx). The idea: the box has 8 cores shared with Postgre
 Postgres spends far less per request when many requests arrive as one set-based statement, so the server collects
 requests for a few milliseconds and sends them in one pipelined round trip.
 
-Local score: TODO (users at the 5-minute hold, hardware and date).
+Local score: 260,000 users at the 5-minute hold (63.9k req/s, p95 388 ms, p99 442 ms, 0 errors), 2026-10-26, with
+the challenge's own `loadgen search` from 500 users on one database for the whole search. Box: an Ubuntu 24.04
+container limited to 8 threads of an i9-14900K with 16 GB, Postgres 18 with the challenge config; load generators on
+other cores of the same host. That machine is much faster than the official box, so expect a lower official number.
+The local run raised the server's file limit to 1,048,576; under the official `LimitNOFILE=200000` one process tops
+out near 200,000 connections.
 
 | Piece | Version |
 |---|---|
