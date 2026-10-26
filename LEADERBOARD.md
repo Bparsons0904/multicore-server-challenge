@@ -9,7 +9,7 @@ Every submission on the same box: **8 dedicated vCPU / 16 GB**, Postgres 18 on t
 | 3 | **92,000** | [go-raw-kimmotamio](submissions/go-raw-kimmotamio) | [#37](https://github.com/arjaythedev/multicore-server-challenge/pull/37) @kimmotamio | direct | 23,284 | 452 | 600 | 24% / 70% |  |
 | 4 | **84,000** | [c-iouring-tigokraft](submissions/c-iouring-tigokraft) | [#10](https://github.com/arjaythedev/multicore-server-challenge/pull/10) @tigokraft | direct | 21,262 | 339 | 421 | 18% / 80% |  |
 | 5 | **84,000** | [cobol-gnucobol-benmandrew](submissions/cobol-gnucobol-benmandrew) | [#15](https://github.com/arjaythedev/multicore-server-challenge/pull/15) @benmandrew | direct | 21,292 | 361 | 461 | 20% / 75% |  |
-| 6 | **80,000** | [julia-raw-wardjm](https://github.com/arjaythedev/multicore-server-challenge/pull/43) | [#43](https://github.com/arjaythedev/multicore-server-challenge/pull/43) @wardjm | direct | 20,519 | 339 | 406 | 22% / 68% |  |
+| 6 | **80,000** | [julia-raw-wardjm](submissions/julia-raw-wardjm) | [#43](https://github.com/arjaythedev/multicore-server-challenge/pull/43) @wardjm | direct | 20,519 | 339 | 406 | 22% / 68% |  |
 | 7 | **80,000** | [rust-mio-foovoo](submissions/rust-mio-foovoo) | [#11](https://github.com/arjaythedev/multicore-server-challenge/pull/11) @FooVoo | direct | 20,710 | 474 | 752 | 18% / 75% |  |
 | 8 | **72,000** | [csharp-kestrel-xeonfx](submissions/csharp-kestrel-xeonfx) | [#8](https://github.com/arjaythedev/multicore-server-challenge/pull/8) @XeonFX | direct | 18,756 | 405 | 610 | 23% / 74% |  |
 | 9 | **72,000** | [goose-native-tbsvttr](submissions/goose-native-tbsvttr) | [#32](https://github.com/arjaythedev/multicore-server-challenge/pull/32) @tbsvttr | direct | 18,985 | 20 | 482 | 15% / 62% |  |
