@@ -4,7 +4,7 @@ Every submission on the same box: **8 dedicated vCPU / 16 GB**, Postgres 18 on t
 
 | # | Users | Submission | PR | Front | req/s | p95 ms | p99 ms | CPU: app / Postgres | Note |
 |--:|--:|---|---|---|--:|--:|--:|---|---|
-| 1 | **100,000** | [kotlin-raw-luben93](https://github.com/arjaythedev/multicore-server-challenge/pull/48) | [#48](https://github.com/arjaythedev/multicore-server-challenge/pull/48) @luben93 | direct | 25,992 | 356 | 628 | 19% / 71% | Not merged yet: ships gradle/wrapper/gradle-wrapper.jar, a prebuilt binary (rule 11); waiting on a fix or Arjay's call |
+| 1 | **100,000** | [kotlin-raw-luben93](https://github.com/arjaythedev/multicore-server-challenge/pull/48) | [#48](https://github.com/arjaythedev/multicore-server-challenge/pull/48) @luben93 | direct | 25,992 | 356 | 628 | 19% / 71% | Not merged yet: scored at d511a4f, which ships gradle/wrapper/gradle-wrapper.jar (rule 11). The fix commit b03759a fails install.sh (`gradle --version` runs without JAVA_HOME); re-run on the next fix |
 | 2 | **100,000** | [rust-tokio-Scooter1337](submissions/rust-tokio-Scooter1337) | [#7](https://github.com/arjaythedev/multicore-server-challenge/pull/7) @Scooter1337 | direct | 26,279 | 119 | 185 | 20% / 70% |  |
 | 3 | **95,000** | [csharp-sockets-jh-d](submissions/csharp-sockets-jh-d) | [#22](https://github.com/arjaythedev/multicore-server-challenge/pull/22) @jh-d | direct | 24,696 | 493 | 737 | 21% / 75% |  |
 | 4 | **92,000** | [go-raw-kimmotamio](submissions/go-raw-kimmotamio) | [#37](https://github.com/arjaythedev/multicore-server-challenge/pull/37) @kimmotamio | direct | 23,284 | 452 | 600 | 24% / 70% |  |
