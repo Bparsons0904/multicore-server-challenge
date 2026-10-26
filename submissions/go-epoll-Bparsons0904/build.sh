@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Builds the server from source -> bin/conduit (static, -trimpath). Idempotent. Dependencies are pinned in go.sum.
 # GOAMD64: v3 when a program built for v3 runs on this machine (the build host is the run host), otherwise v1.
-# CONDUIT_GOAMD64=v1|v2|v3 overrides. A default.pgo next to this script is used automatically (see README).
+# CONDUIT_GOAMD64=v1|v2|v3 overrides. No profile-guided optimization is used.
 set -euo pipefail
 cd "$(dirname "$0")"
 GO=/usr/local/go/bin/go
@@ -23,5 +23,4 @@ fi
 export CGO_ENABLED=0 GOFLAGS=-mod=readonly GOAMD64=$level
 mkdir -p bin
 "$GO" build -trimpath ${CONDUIT_BUILD_TAGS:+-tags "$CONDUIT_BUILD_TAGS"} -o bin/conduit .
-pgo=none; [ -f default.pgo ] && pgo=default.pgo
-echo "built bin/conduit ($("$GO" version | awk '{print $3}'), GOAMD64=$level: $why, pgo=$pgo)"
+echo "built bin/conduit ($("$GO" version | awk '{print $3}'), GOAMD64=$level: $why)"

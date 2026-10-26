@@ -109,10 +109,7 @@ DATABASE_URL=postgres://conduit:conduit@127.0.0.1:5432/conduit JWT_SECRET=multic
 runtime checks every v3 feature at startup), and with `v1` otherwise, and prints which. The build host is the run
 host. `CONDUIT_GOAMD64=v1|v2|v3` overrides it.
 
-**Profile-guided optimization (disclosure).** If `default.pgo` sits next to `main.go`, the Go toolchain uses it
-automatically (`-pgo=auto`) to inline and lay out the hot paths. It is a CPU profile of this server under the
-challenge's load, collected with `tools/regen-pgo.sh <pprof URL>` from a `-tags lab` build with `CONDUIT_PPROF` set.
-It is data for the compiler, not code: it changes no behavior. `build.sh` prints `pgo=default.pgo` when it is used.
+**No PGO.** The build uses no profile-guided optimization and ships no `default.pgo`; a profile measured neutral.
 
 **Tunables (environment).** `CONDUIT_BATCH_SHARING`, `CONDUIT_READ_PLAN`, `CONDUIT_READ_GROUPS` (without a plan: G
 read queues keyed by what requests share), `CONDUIT_DB_WORKERS` (12), `CONDUIT_DB_WRITERS` (4),
